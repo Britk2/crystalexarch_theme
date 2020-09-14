@@ -10,7 +10,7 @@ get_header();
     <h1 class="about_title"><?php the_title(); ?></h1>
 
     <div class="about_content">
-     <p>about</p>
+     <p>About Page Incomming</p>
     </div>
 </main>
 

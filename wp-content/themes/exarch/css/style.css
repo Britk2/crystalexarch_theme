@@ -63,4 +63,12 @@ footer{
 
 .menu a{color: var(--gold);}
 
+.container, .wp-block-image{
+    padding: 1rem;
+}
 
+.header__logo{
+    max-width: 5rem;
+}
+
+.wp-post-image{width: 90%; height: 90%;}

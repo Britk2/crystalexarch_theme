@@ -17,6 +17,7 @@
             <?php while (have_posts()) : the_post(); ?>
                     <a href="<?php the_permalink();?>">
                         <h2><?php the_title();?></h2>
+                        <p class="post_meta"><?php the_date('M j, Y')?><?php the_category();?></p>
                     </a>
                 <article class="article_block">
                     <div class="archive_intro">

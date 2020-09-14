@@ -48,3 +48,46 @@ function register_event_custom_post_type(){
 }
 
 add_action('init', 'register_event_custom_post_type');
+
+
+function register_news_custom_post_type(){
+    $arg = [
+        'label'                 => 'News',
+        'labels'                => [
+            'name'                  => 'News',
+            'singular_name'         => 'News'
+        ],
+        'supports' => [
+            'title',
+            'editor',
+            'author',
+            'thumbnail',
+            'excerpt',
+            'trackbacks',
+            'custom-fields',
+            'comments',
+            'revisions',
+            'page-attributes',
+            'post-formats'
+        ],
+
+        'hierarchical'          => true,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'show_in_rest'          => true,
+        // Dash Icons https://developer.wordpress.org/resource/dashicons/#media-audio
+        'menu_icon'             => 'dashicons-buddicons-pm'
+        ];
+
+    register_post_type('news',$arg);
+}
+
+add_action('init', 'register_news_custom_post_type');
