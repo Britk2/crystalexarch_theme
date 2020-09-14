@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: About 
+ * Template Name: Events
  * 
  */
 get_header();
@@ -10,7 +10,8 @@ get_header();
     <h1 class="about_title"><?php the_title(); ?></h1>
 
     <div class="about_content">
-     <p>about</p>
+     <p>event</p>
+     EVENTS
     </div>
 </main>
 

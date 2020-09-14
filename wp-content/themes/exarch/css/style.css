@@ -27,13 +27,40 @@ table {border-collapse: collapse; border-spacing: 0;}
     --gold: #C29131;
 }
 
-body{
-    background-color: #191719;
+main, footer{
+    background-color: var(--black);
     opacity: 85%;
 }
 
 html{
-    background-image: url(../pics/background_tower.png);
+    background-image: url(../pics/background_svg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.header{
+    background-color: var(--grey);
+    opacity:100%;
+}
+
+body{
+    color: var(--cream);
+    margin: 0 5rem;
+}
+
+a{
+    color: var(--blueraspberry);
+}
+
+a:visited{
+    color: var(--redbean)
+}
+
+footer{
+    padding: 1rem;
+    text-align: center;
+}
+
+.menu a{color: var(--gold);}
 
 

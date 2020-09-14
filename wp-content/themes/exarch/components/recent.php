@@ -21,7 +21,7 @@
             <div class="recent_content">
               <h3><?php the_title(); ?></h3>
               <p><?php the_excerpt();?></p>
-              <a href="<?php the_permalink(); ?>" class="wp-block-button__link">View Project</a>
+              <a href="<?php the_permalink(); ?>" class="wp-block-button__link">View Event</a>
             </div>
           </section>
         <?php endwhile; ?>

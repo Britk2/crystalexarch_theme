@@ -19,7 +19,7 @@ function include_css_files() {
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
     // Example of including a style local to your theme root
-    wp_enqueue_style('exarch-css', get_template_directory_uri() . '/css/style.css');
+    wp_enqueue_style('css', get_template_directory_uri() . '/css/style.css');
 }
 
 // When WP performs this action, call our function
@@ -31,29 +31,11 @@ add_action('wp_enqueue_scripts', 'include_css_files');
  * @link https://developer.wordpress.org/reference/functions/wp_enqueue_style/
  */
 function include_js_files() {
-    wp_enqueue_script('exarch-js', get_template_directory_uri() . '/script/site.js', [], false,true);
+    wp_enqueue_script('js', get_template_directory_uri() . '/script/site.js', [], false,true);
 }// js at footer
 
 // When WP performs this action, call our function
 add_action('wp_enqueue_scripts', 'include_js_files');
-
-/**
- * Register custom sidebar for theme
- * 
- * @link https://developer.wordpress.org/reference/functions/register_sidebar/
- * 
- * @return void
- * 
- */
-function register_theme_sidebar(){
-    register_sidebar([
-        'name' => 'Blog Sidebar',
-        'id' => 'blog-sidebar',
-        'description' => 'This is the custom sidebar for my theme'
-    ]);
-}
-
-add_action('widgets_init', 'register_theme_sidebar');
 
 /**
  * Register menus

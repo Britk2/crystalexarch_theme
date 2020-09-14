@@ -27,7 +27,7 @@ function register_event_custom_post_type(){
             'page-attributes',
             'post-formats'
         ],
-        // 'taxonomies'            => ['category', 'post_tag'], //means category how wp organized
+
         'hierarchical'          => true,
         'public'                => true,
         'show_ui'               => true,
