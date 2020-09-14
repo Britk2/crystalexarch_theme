@@ -15,7 +15,8 @@ add_action('after_setup_theme', 'add_post_thumbnails_support');
  * @link https://developer.wordpress.org/reference/functions/wp_enqueue_style/
  */
 function include_css_files() {
-    // Example of including an external link
+    wp_enqueue_style('fonts', get_template_directory_uri() . '/fonts/fonts.css');
+
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
     // Example of including a style local to your theme root

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Jupiter Pro';
+    src: url('Jupiter_Pro_Regular.otf') format('otf'),
+         url('jupiter_pro_regular-webfont.woff2') format('woff2'),
+         url('jupiter_pro_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
