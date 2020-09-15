@@ -1,12 +1,11 @@
 <div class="recent_section">
-      <h2> Recent </h2>
+      <h2 class="sub_title"> Recent </h2>
       <?php
         //query
         $args = [
-          'post_type' => 'events',
+          'post_type' => array('events', 'news'),
           'post_status' => 'publish',
           'posts_per_page' => 3
-
         ];
 
         $the_query = new WP_Query ($args);
@@ -16,13 +15,20 @@
         <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
           <section class="recent">
             <div class="recent_content">
-              <h3><?php the_title(); ?></h3>
-              <?php
+              <h4><?php the_title(); ?></h4>
+              <?php if(get_the_terms( $post->ID , 'eventType' )):
                 $terms = get_the_terms( $post->ID , 'eventType' );
                 foreach ( $terms as $term ) {?>
                   <h4><?php the_date('M j, Y')?> | <?php echo $term->name;?></h4>
               <?php    
                 }
+              ?>
+          <?php elseif(get_the_terms( $post->ID , 'newsType' )):
+                $terms = get_the_terms( $post->ID , 'newsType' );
+                foreach ( $terms as $term ) {?>
+                  <h4><?php the_date('M j, Y')?> | <?php echo $term->name;?></h4>
+              <?php    
+                } endif;
               ?>
               <p><?php the_excerpt();?></p>
             </div>
@@ -33,7 +39,7 @@
           </section>
         <?php endwhile; ?>
 
-        <a href="<?php echo get_site_url();?>/events" target="_blank" class="wp-block-button__link">View All</a>
+        <a href="<?php echo get_site_url();?>/events" target="_blank" class="wp-block-button__link btn_all">View All</a>
 
       <?php else: ?>
 

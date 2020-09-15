@@ -1,5 +1,6 @@
 @import "/fonts/fonts.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -29,21 +30,45 @@ table {border-collapse: collapse; border-spacing: 0;}
     --blueraspberry:#85A9CA;
     --gold: #C29131;
 
-    --head-font: Jupiter Pro;
-    --font:'Montserrat';
+
+    --background: rgba(25, 23, 25, 0.85);
+
+    --title-font: Jupiter Pro, sans-serif;
+    --font:'Montserrat', sans-serif;
+    --header-font: 'Domine', serif;
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: var(--head-font);       
+    color: var(--strawberry);
+    font-family: var(--header-font);
+    line-height: 2rem;
+}
+
+h1{font-size: 2.25rem;}h2{font-size: 2rem;}h3{font-size: 1.75rem;}h4{font-size: 1.5rem;}h5{font-size: 1.25rem;}h6,p{font-size: 1rem;}
+
+.title{
+    color: var(--gold);
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.sub_title{
+    font-size: 2rem;
 }
 
 p,a,ul,li{
+    color:var(--cream);
     font-family: var(--font), sans-serif;
 }
 
-main, footer{
-    background-color: var(--black);
-    opacity: 85%;
+p,h3,h4,h5,h6{
+    text-indent: 1.5rem;
+}
+
+.main-content, footer{
+    background-color: var(--background)
 }
 
 html{
@@ -54,25 +79,13 @@ html{
 
 .header{
     background-color: var(--grey);
-    opacity:100%;
 }
 
 body{
     color: var(--cream);
-    margin: 0 5rem;
-}
-
-a{
-    color: var(--blueraspberry);
-}
-
-a:visited{
-    color: var(--redbean)
-}
-
-footer{
-    padding: 1rem;
-    text-align: center;
+    width: 75%;
+    margin: auto;
+    line-height: 1.25rem;
 }
 
 .menu a{color: var(--gold);}
@@ -85,4 +98,41 @@ footer{
     max-width: 5rem;
 }
 
-.wp-post-image{width: 90%; height: 90%;}
+a, .wp-block-button__link{
+    color: var(--blueraspberry);
+}
+
+a:hover, .wp-block-button__link:hover{
+    color: var(--redbean)
+}
+
+.wp-block-button__link{
+    background-color: var(--redbean);
+}
+.wp-block-button__link:hover{
+    background-color: var(--blueraspberry);
+}
+
+.btn_all{
+    display: block;
+    margin: auto;
+    max-width: 5rem;
+}
+
+
+
+.wp-post-image{
+    display: block;
+    width: 90%;
+    height: 90%;
+    max-width: 50rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+footer{
+    padding: 1rem;
+    text-align: center;
+}
+
+

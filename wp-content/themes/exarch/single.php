@@ -3,17 +3,21 @@
   <?php while (have_posts()) : the_post(); ?>
     <div class="container">
         <!-- Main Content -->
-        <h1 class="post_title"><?php the_title(); ?></h1>
-        <?php
+        <h2 class="post_title"><?php the_title(); ?></h2>
+        <?php if(get_the_terms( $post->ID , 'eventType' )):
                 $terms = get_the_terms( $post->ID , 'eventType' );
                 foreach ( $terms as $term ) {?>
                   <h4><?php the_date('M j, Y')?> | <?php echo $term->name;?></h4>
               <?php    
                 }
               ?>
-        <div class="intro">
-            <?php the_excerpt();?>
-        </div>
+          <?php elseif(get_the_terms( $post->ID , 'newsType' )):
+                $terms = get_the_terms( $post->ID , 'newsType' );
+                foreach ( $terms as $term ) {?>
+                  <h4><?php the_date('M j, Y')?> | <?php echo $term->name;?></h4>
+              <?php    
+                } endif;
+              ?>
         <div class="page-builder">
             <?php the_content(); ?>
         </div>

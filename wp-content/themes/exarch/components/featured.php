@@ -1,6 +1,6 @@
 
 <div class="featured_section">
-      <h2> Featured </h2>
+      <h2 class="sub_title"> Featured </h2>
       <?php $featured_posts = get_field('featured_events'); 
       if( $featured_posts ): ?>
           <?php foreach( $featured_posts as $featured_post ): 
@@ -13,8 +13,8 @@
             ?>
             <section class="featured">
             <div class="featured_content">
-                <h3><?php echo $title; ?></h3>
-                <h4><?php echo $date;?></h4>
+                <h4><?php echo $title; ?></h4>
+                <h5><?php echo $date;?></h5>
                 <p><?php echo $excerpt; ?></p>
               </div>
               <div class="featured_media">
@@ -24,5 +24,5 @@
             </section>
           <?php endforeach; ?>
       <?php endif; ?>
-      <a href="<?php echo get_site_url();?>/events" class="wp-block-button__link btn_home">View All</a>
+      <a href="<?php echo get_site_url();?>/events" class="wp-block-button__link btn_all">View All</a>
     </div>

@@ -17,7 +17,9 @@ add_action('after_setup_theme', 'add_post_thumbnails_support');
 function include_css_files() {
     wp_enqueue_style('fonts', get_template_directory_uri() . '/fonts/fonts.css');
 
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap');
 
     // Example of including a style local to your theme root
     wp_enqueue_style('css', get_template_directory_uri() . '/css/style.css');
@@ -54,5 +56,7 @@ function register_theme_navigation(){
 }
 
 add_action('after_setup_theme', 'register_theme_navigation');
+
+remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
 
 
