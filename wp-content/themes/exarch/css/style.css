@@ -142,18 +142,18 @@ body{
     max-width: 5rem;;
 }
 
-a, .wp-block-button__link{
+a, .wp-block-button__link, .btn_single{
     color: var(--blueraspberry);
 }
 
-a:hover, .wp-block-button__link:hover{
-    color: var(--redbean)
+a:hover, .wp-block-button__link:hover, .btn_single:hover{
+    color: var(--redbean);
 }
 
-.wp-block-button__link{
+.wp-block-button__link, .btn_single{
     background-color: var(--redbean);
 }
-.wp-block-button__link:hover{
+.wp-block-button__link:hover, .btn_single:hover{
     background-color: var(--blueraspberry);
 }
 
