@@ -142,7 +142,7 @@ body{
     max-width: 5rem;;
 }
 
-a, .wp-block-button__link, .btn_single{
+a, .btn_single, .btn_single:visited{
     color: var(--blueraspberry);
 }
 
