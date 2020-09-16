@@ -38,9 +38,6 @@
             <a href="<?php the_permalink(); ?>" class="wp-block-button__link btn_single">View</a>
           </section>
         <?php endwhile; ?>
-
-        <a href="<?php echo get_site_url();?>/events" target="_blank" class="wp-block-button__link btn_all">View All</a>
-
       <?php else: ?>
 
         <h2>No Recent Results</h2>

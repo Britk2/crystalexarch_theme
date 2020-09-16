@@ -33,7 +33,7 @@
         </section>
         <?php endwhile; ?>
 
-        <a href="<?php echo get_site_url();?>/news" target="_blank" class="wp-block-button__link btn_all">View All Events</a>
+        <a href="<?php echo get_site_url();?>/events" class="wp-block-button__link btn_all">View All Events</a>
 
     <?php else: ?>
 
