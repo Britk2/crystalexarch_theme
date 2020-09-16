@@ -28,6 +28,7 @@ readme.html
 wp-content/mu-plugins/
 wp-content/plugins/
 !wp-content/themes/
+!wp-content/themes/exarch/index.php
 
 #save only the themes
 !wp-content/themes/
