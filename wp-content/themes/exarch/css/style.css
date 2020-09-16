@@ -42,6 +42,7 @@ h1,h2,h3,h4,h5,h6{
     color: var(--strawberry);
     font-family: var(--header-font);
     line-height: 2rem;
+    padding: 1rem 0 .5rem 0;
 }
 
 h1{font-size: 2.25rem;}h2{font-size: 2rem;}h3{font-size: 1.75rem;}h4{font-size: 1.5rem;}h5{font-size: 1.25rem;}h6,p{font-size: 1rem;}
@@ -61,10 +62,13 @@ h1{font-size: 2.25rem;}h2{font-size: 2rem;}h3{font-size: 1.75rem;}h4{font-size: 
 p,a,ul,li{
     color:var(--cream);
     font-family: var(--font), sans-serif;
+    max-width: 85ch;
+    margin: auto;
 }
 
 p,h3,h4,h5,h6{
     text-indent: 1.5rem;
+    padding: .25rem 0 .125rem 0;
 }
 
 .main-content, footer{
@@ -88,14 +92,46 @@ body{
     line-height: 1.25rem;
 }
 
-.menu a{color: var(--gold);}
+.header_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_link{
+    margin: 0;
+}
+
+.menu a{
+    color: var(--gold); 
+    text-decoration: none;
+}
+
+.menu-primary-menu-container ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu_container ul li{
+    padding: 1rem;
+    width: 5rem;
+    text-align: center;
+}
+
+.menu_container ul li:hover{
+    background-color: var(--strawberry);
+}
 
 .container, .wp-block-image{
     padding: 1rem;
+    width:90%;
+    max-width: 60rem;
+    margin: auto;
 }
 
 .header__logo{
-    max-width: 5rem;
+    max-width: 5rem;;
 }
 
 a, .wp-block-button__link{
@@ -116,10 +152,14 @@ a:hover, .wp-block-button__link:hover{
 .btn_all{
     display: block;
     margin: auto;
-    max-width: 5rem;
+    max-width: 9rem;
 }
 
-
+.btn_single{
+    display: block;
+    margin: auto 1rem auto auto;
+    max-width: 7rem;
+}
 
 .wp-post-image{
     display: block;
@@ -128,6 +168,53 @@ a:hover, .wp-block-button__link:hover{
     max-width: 50rem;
     margin: auto;
     padding: 1rem;
+}
+
+.recent_section, .featured_section, .recent, .featured, .search_section{
+    padding: 1rem .5rem 1rem .5rem;
+}
+
+.discord_section{
+    max-width: 25rem;
+    width: 100%;
+    margin: auto;
+    padding: 2.5rem 0;
+}
+
+.discord_link{
+    text-align: center;
+    margin: auto;
+}
+
+#searchField{
+    width: 85%;
+    padding: 1rem;
+    background-color: var(--grey);
+    color:var(--cream);
+    border: none;
+    font-family: var(--title-font);
+}
+
+#searchField::placeholder{
+    color:var(--cream);
+}
+
+#searchField:focus{
+    background-color: var(--strawberry);
+    color:var(--cream);
+}
+
+#search_submit{
+    width: 5rem;
+    padding: 1rem;
+    background-color: var(--redbean);
+    color: var(--cream);
+    border: none;
+    font-family: var(--title-font);
+}
+
+#search_submit:hover{
+    background-color: var(--blueraspberry);
 }
 
 footer{

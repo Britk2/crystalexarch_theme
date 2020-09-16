@@ -12,7 +12,7 @@
             $date = get_the_date('M j, Y', $featured_post ->ID);
             ?>
             <section class="featured">
-            <div class="featured_content">
+              <div class="featured_content">
                 <h4><?php echo $title; ?></h4>
                 <h5><?php echo $date;?></h5>
                 <p><?php echo $excerpt; ?></p>
@@ -20,7 +20,7 @@
               <div class="featured_media">
                 <?php echo $image; ?>
               </div>
-              <a href="<?php echo $permalink; ?>" class="wp-block-button__link">View Event</a>
+              <a href="<?php echo $permalink; ?>" class="wp-block-button__link btn_single">View Event</a>
             </section>
           <?php endforeach; ?>
       <?php endif; ?>

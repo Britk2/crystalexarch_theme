@@ -7,16 +7,17 @@
     <?php wp_head();?>
 </head>
 <body <?php body_class();?>>
-<header class="header">
-  <div class="container header_content">
-    <a href="<?php echo get_site_url();?>"><img class="header__logo" src="<?php echo get_site_icon_url();?>" alt="This is the logo">
-    </a>
-    <div class="menu">
-      <?php
-        wp_nav_menu([
-          'theme_location' => 'primary_menu'
-        ]);
-      ?>
+  <header class="header">
+    <div class="container header_content">
+      <a class="logo_link" href="<?php echo get_site_url();?>">
+        <img class="header__logo" src="<?php echo get_site_icon_url();?>" alt="This is the logo">
+      </a>
+      <div class="menu_container">
+        <?php
+          wp_nav_menu([
+            'theme_location' => 'primary_menu'
+          ]);
+        ?>
+      </div>
     </div>
-  </div>
-</header>
+  </header>

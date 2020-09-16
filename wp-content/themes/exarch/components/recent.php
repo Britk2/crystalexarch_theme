@@ -35,7 +35,7 @@
             <div class="recent_media">
               <?php the_post_thumbnail(); ?>
             </div>
-            <a href="<?php the_permalink(); ?>" class="wp-block-button__link">View Event</a>
+            <a href="<?php the_permalink(); ?>" class="wp-block-button__link btn_single">View</a>
           </section>
         <?php endwhile; ?>
 

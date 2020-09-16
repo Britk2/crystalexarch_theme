@@ -11,7 +11,7 @@ get_header();
       </div>
     </div>
     <?php get_template_part('components/featured');?>
-    <?php get_template_part('components/recent');?>
+    <?php get_template_part('components/discord');?>
   </div>
 </main>
 
