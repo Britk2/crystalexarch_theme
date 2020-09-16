@@ -195,7 +195,7 @@ a:hover, .wp-block-button__link:hover{
 }
 
 #searchField{
-    width: 85%;
+    width: 80%;
     padding: 1rem;
     background-color: var(--grey);
     color:var(--cream);
