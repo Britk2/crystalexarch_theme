@@ -4,7 +4,7 @@
 			top: 32px!important;
 		}
 				body.admin-bar .mobmenu-search-holder {
-				top: 107px!important;
+				top: 132px!important;
 		}
 }
 
@@ -17,10 +17,10 @@
 		top: 0px!important;
 	}
 		body.admin-bar .mobmenu-search-holder {
-		top: 121px!important;
+		top: 146px!important;
 	}
 	body.admin-bar  .mob-menu-slideout .mobmenu-search-holder {
-		top: 75px!important;
+		top: 100px!important;
 	}
 
 }
@@ -46,13 +46,13 @@
 	}
 }
 
-@media only screen and (min-width:512px){
+@media only screen and (min-width:513px){
 	.mob_menu, .mobmenu-panel, .mobmenu, .mobmenu-cart-panel, .mobmenu-footer-menu-holder, .mobmenu-right-panel, .mobmenu-left-panel  {
 		display: none!important;
 	}
 }
 
-@media only screen and (max-width:511px) {
+@media only screen and (max-width:512px) {
 
 			
 	.mobmenur-container i {
@@ -62,22 +62,22 @@
 		color: #c29131;
 	}
 	.mobmenul-container img {
-		max-height:  75px;
+		max-height:  100px;
 		float: left;
 	}
 	.mobmenur-container img {
-		max-height:  75px;
+		max-height:  100px;
 		float: right;
 	}
 	.mob-expand-submenu i {
-		font-size: 25px;
+		font-size: 45px;
 	}
 	#mobmenuleft li a , #mobmenuleft li a:visited, .mobmenu-content h2, .mobmenu-content h3, .show-nav-left .mob-menu-copyright, .show-nav-left .mob-expand-submenu i {
 		color: #c29131;
 
 	}
 	.mob-cancel-button {
-		font-size: 30px!important;
+		font-size: 45px!important;
 	}
 
 	/* 3rd Level Left Menu Items Background color on Hover*/
@@ -106,7 +106,7 @@
 		.mobmenu-content #mobmenuleft .sub-menu {
 		background-color: #3a3a3a ;
 		margin: 0;
-		color: #fff ;
+		color: #c29131 ;
 		width: 100%;
 		position: initial;
 		height: 100%;
@@ -128,7 +128,7 @@
 		background-size:  cover;
 	}
 		.mobmenu-content #mobmenuleft .sub-menu a {
-		color: #fff ;
+		color: #c29131 ;
 	}
 	.mobmenu-content #mobmenuright .sub-menu  a {
 		color: #fff ;
@@ -153,10 +153,10 @@
 		color: #FFF ;
 	}
 	.mobmenul-container {
-		top: 10px;
+		top: 15px;
 		margin-left: 5px;
 		margin-top: 10px;
-		height: 75px;
+		height: 100px;
 		float: left;
 	}
 	.mobmenur-container {
@@ -169,16 +169,16 @@
 		text-align:   center;
 		margin-left:  0;
 		margin-right: 0;
-		height:       75px;
+		height:       100px;
 			}
 	.mob-menu-header-holder {
 		width:  100% ;
 		background-color: #3f3a3a ;
-		height: 75px ;
+		height: 100px ;
 		position:fixed;
 	}
 	body.mob-menu-overlay, body.mob-menu-slideout, body.mob-menu-slideout-over, body.mob-menu-slideout-top {
-		padding-top: 75px;
+		padding-top: 100px;
 	}
 		.mobmenul-container, .mobmenur-container{
 		position: absolute; 
@@ -191,7 +191,7 @@
 		background-color:#F7F7F7;		width:  270px; 
 	}
 	.show-nav-left .mobmenu-overlay, .show-nav-right .mobmenu-overlay, .show-mob-menu-search .mobmenu-overlay  {
-		background: rgba(0, 0, 0, 0.83);
+		background: rgba(25,23,25,0.85);
 	}
 	.mob-menu-slideout-top .mobmenu-overlay {
 		display:none!important;
@@ -255,10 +255,10 @@
 	}
 	.headertext span {
 		position: initial;
-		line-height: 75px;
+		line-height: 100px;
 	}
 	.mobmenu-search-holder {
-		top: 75px;
+		top: 100px;
 	}
 	/*Premium options  */
 	
@@ -280,14 +280,14 @@
 		padding-right: 10%;
 	}
 	.mobmenul-container i {
-		line-height: 30px;
-		font-size: 30px;
+		line-height: 45px;
+		font-size: 45px;
 		float: left;
 	}
 	.left-menu-icon-text {
 		float: left;
-		line-height: 30px;
-		color: #222;
+		line-height: 45px;
+		color: #c29131;
 	}
 	.mobmenu-left-panel .mobmenu-display-name {
 		color: #c29131;
@@ -308,9 +308,9 @@
 	
 	.mob-standard-logo {
 		display: inline-block;
-		height:50px!important;	}
+		height:80px!important;	}
 	.mob-retina-logo {
-		height:50px!important;	}
+		height:80px!important;	}
 	.mobmenu-content #mobmenuleft > li > a:hover {
 		background-color: #a06069;
 	}
@@ -329,42 +329,42 @@
 
 
 .mob-menu-logo-holder > .headertext span,.mobmenu input.mob-menu-search-field {
-	font-family:Dosis;
-	font-size:20px;
+	font-family:Domine;
+	font-size:32px;
 	font-weight:inherit;
 	font-style:normal;
 	letter-spacing:normal;
-	text-transform:none;
+	text-transform:capitalize;
 }
 
 .left-menu-icon-text {
-	font-family:Dosis;
-	font-size:inherit;
+	font-family:Domine;
+	font-size:32px;
 	font-weight:inherit;
 	font-style:normal;
 	line-height:1.5em;
 	letter-spacing:normal;
-	text-transform:none;
+	text-transform:capitalize;
 }
 
 #mobmenuleft .mob-expand-submenu,#mobmenuleft > .widgettitle,#mobmenuleft li a,#mobmenuleft li a:visited,#mobmenuleft .mobmenu-content h2,#mobmenuleft .mobmenu-content h3,.mobmenu-left-panel .mobmenu-display-name {
 	font-family:Domine;
-	font-size:50px;
+	font-size:28px;
 	font-weight:inherit;
 	font-style:normal;
 	line-height:1.5em;
 	letter-spacing:normal;
-	text-transform:none;
+	text-transform:capitalize;
 }
 
 .right-menu-icon-text {
-	font-family:Dosis;
+	font-family:Domine;
 	font-size:inherit;
 	font-weight:inherit;
 	font-style:normal;
 	line-height:1.5em;
 	letter-spacing:normal;
-	text-transform:none;
+	text-transform:capitalize;
 }
 
 #mobmenuright li a,#mobmenuright li a:visited,#mobmenuright .mobmenu-content h2,#mobmenuright .mobmenu-content h3,.mobmenu-left-panel .mobmenu-display-name {
@@ -374,9 +374,6 @@
 	font-style:normal;
 	line-height:1.5em;
 	letter-spacing:normal;
-	text-transform:none;
+	text-transform:capitalize;
 }
 
-@import "/fonts/fonts.css";
-
-font-family: var(--font), sans-serif;

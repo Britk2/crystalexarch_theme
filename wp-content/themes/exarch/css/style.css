@@ -89,7 +89,7 @@ html{
 }
 
 .header + .main-content {
-    padding-top: 6.5rem;
+    padding-top: 6rem;
 }
 
 body{
@@ -117,7 +117,7 @@ body{
 
 .menu-primary-menu-container ul{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap column;
     list-style: none;
 }
 
@@ -138,8 +138,12 @@ body{
     margin: auto;
 }
 
+.container{
+    padding-top: 2rem;
+}
+
 .header__logo{
-    max-width: 5rem;;
+    max-width: 5rem;
 }
 
 a, .btn_single, .btn_single:visited{
@@ -238,6 +242,12 @@ footer{
 
     .header{
         width: 75%;
+    }
+
+    .menu-primary-menu-container ul{
+        display: flex;
+        flex-flow: wrap row;
+        list-style: none;
     }
 }
 
