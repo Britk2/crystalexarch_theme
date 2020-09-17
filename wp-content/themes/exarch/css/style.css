@@ -241,5 +241,12 @@ footer{
     }
 }
 
-
-
+@media screen and (max-width:32rem){
+    .header{
+        display: none;
+    }
+    
+    .header + .main-content {
+        padding-top: 0;
+    }
+}
